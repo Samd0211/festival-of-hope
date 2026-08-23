@@ -1,0 +1,1820 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,600;0,700;1,600;1,700&display=swap');
+
+
+/* =========================================================
+   FESTIVAL OF HOPE 2026 PALETTE
+========================================================= */
+
+:root {
+    --cream: #F7F0E5;
+    --cream-dark: #EDE2D2;
+    --cream-card: #F2E7D7;
+
+    --red: #C92832;
+    --coral: #F06A5A;
+    --orange: #E86F13;
+    --gold: #F2B51D;
+
+    --ink: #1A1716;
+    --muted: #6D655E;
+    --line: #D5C8B8;
+
+    --dark: #3A181C;
+    --dark-deep: #32161A;
+    --dark-line: #604044;
+}
+
+
+/* =========================================================
+   RESET
+========================================================= */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'DM Sans', sans-serif;
+    background: var(--cream);
+    color: var(--ink);
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+
+/* =========================================================
+   NAVIGATION
+========================================================= */
+
+.navbar {
+    height: 80px;
+
+    padding: 0 6%;
+
+    display: flex;
+    align-items: center;
+
+    position: fixed;
+
+    top: 0;
+    left: 0;
+    right: 0;
+
+    z-index: 100;
+
+    background: rgba(247, 240, 229, 0.94);
+
+    backdrop-filter: blur(14px);
+    -webkit-backdrop-filter: blur(14px);
+
+    border-bottom: 1px solid var(--ink);
+}
+
+
+.logo {
+    flex-shrink: 0;
+
+    font-size: 13px;
+    font-weight: 700;
+
+    line-height: 0.9;
+    letter-spacing: -0.5px;
+}
+
+
+.nav-info {
+    display: flex;
+    align-items: center;
+
+    gap: 12px;
+
+    margin-left: 35px;
+    margin-right: auto;
+
+    font-size: 10px;
+    font-weight: 600;
+
+    letter-spacing: 1.5px;
+
+    color: var(--muted);
+}
+
+
+.nav-divider {
+    width: 4px;
+    height: 4px;
+
+    flex-shrink: 0;
+
+    border-radius: 50%;
+
+    background: var(--red);
+}
+
+
+nav {
+    display: flex;
+    align-items: center;
+
+    gap: 35px;
+
+    margin-right: 35px;
+}
+
+
+nav a {
+    font-size: 14px;
+    font-weight: 500;
+
+    transition: opacity 0.2s ease;
+}
+
+
+nav a:hover {
+    opacity: 0.5;
+}
+
+
+.nav-event-count {
+    display: flex;
+    align-items: center;
+
+    gap: 8px;
+
+    margin-right: 25px;
+    padding-right: 25px;
+
+    border-right: 1px solid var(--line);
+}
+
+
+.count-number {
+    font-family: 'Playfair Display', serif;
+
+    font-size: 22px;
+    line-height: 1;
+
+    color: var(--red);
+}
+
+
+.count-label {
+    font-size: 9px;
+    font-weight: 700;
+
+    letter-spacing: 1px;
+
+    color: #817a72;
+}
+
+
+.nav-button {
+    flex-shrink: 0;
+
+    padding: 12px 20px;
+
+    background: var(--red);
+    color: white;
+
+    border-radius: 100px;
+
+    font-size: 13px;
+    font-weight: 600;
+
+    transition:
+        transform 0.2s ease,
+        opacity 0.2s ease;
+}
+
+
+.nav-button:hover {
+    transform: translateY(-2px);
+    opacity: 0.9;
+}
+
+
+/* =========================================================
+   GENERAL
+========================================================= */
+
+.eyebrow {
+    color: var(--red);
+
+    font-size: 12px;
+    font-weight: 700;
+
+    letter-spacing: 2px;
+
+    text-transform: uppercase;
+
+    margin-bottom: 25px;
+}
+
+
+.section {
+    padding: 130px 8%;
+}
+
+
+.section-heading {
+    max-width: 750px;
+
+    margin-bottom: 70px;
+}
+
+
+.section-heading h2 {
+    color: var(--red);
+
+    font-family: 'Playfair Display', serif;
+
+    font-size: clamp(50px, 6vw, 85px);
+
+    line-height: 0.95;
+    letter-spacing: 0px;
+}
+
+
+.section-heading > p:last-child {
+    margin-top: 25px;
+
+    color: var(--muted);
+
+    font-size: 17px;
+
+    line-height: 1.5;
+}
+
+
+/* =========================================================
+   BUTTONS
+========================================================= */
+
+.button {
+    display: inline-block;
+
+    padding: 16px 25px;
+
+    border-radius: 100px;
+
+    font-size: 14px;
+    font-weight: 600;
+
+    transition:
+        transform 0.2s ease,
+        opacity 0.2s ease;
+}
+
+
+.button:hover {
+    transform: translateY(-3px);
+}
+
+
+.primary {
+    background: var(--red);
+    color: white;
+}
+
+
+.secondary {
+    border: 1px solid #b9aaa0;
+}
+
+
+/* =========================================================
+   HOMEPAGE HERO
+========================================================= */
+
+.hero {
+    min-height: 100vh;
+
+    padding: 120px 6% 70px;
+
+    display: grid;
+
+    grid-template-columns: 1fr 1fr;
+
+    gap: 70px;
+
+    align-items: center;
+
+    background: var(--cream);
+}
+
+
+.hero-image {
+    width: 100%;
+
+    overflow: hidden;
+
+    background: #e5dbcc;
+}
+
+
+.hero-image img {
+    width: 100%;
+    height: auto;
+
+    display: block;
+}
+
+
+.hero-content {
+    max-width: 650px;
+}
+
+
+.hero h1 {
+    color: var(--red);
+
+    font-family: 'Playfair Display', serif;
+
+    font-size: clamp(70px, 9vw, 100px);
+
+    line-height: 0.9;
+    letter-spacing: 0px;
+}
+
+.hero h1 em {
+    font-weight: 600;
+}
+
+
+.hero-description {
+    max-width: 480px;
+
+    margin-top: 35px;
+
+    font-size: 19px;
+
+    line-height: 1.6;
+
+    color: #5f5953;
+}
+
+
+.hero-buttons {
+    display: flex;
+
+    gap: 15px;
+
+    margin-top: 40px;
+
+    flex-wrap: wrap;
+}
+
+
+/* =========================================================
+   ABOUT
+========================================================= */
+
+.about {
+    background: var(--dark);
+
+    color: white;
+}
+
+
+.about-content {
+    display: grid;
+
+    grid-template-columns: 1.3fr 0.7fr;
+
+    gap: 100px;
+
+    align-items: center;
+}
+
+
+.about-text {
+    max-width: 700px;
+}
+
+
+.about-text .section-heading {
+    margin-bottom: 50px;
+}
+
+
+.about-text p {
+    font-size: 21px;
+
+    line-height: 1.6;
+
+    margin-bottom: 30px;
+}
+
+
+.about-text .placeholder {
+    color: #817a72;
+
+    font-size: 15px;
+}
+
+
+.stats {
+    display: grid;
+
+    grid-template-columns: 1fr 1fr;
+
+    gap: 50px;
+
+    align-content: start;
+}
+
+
+.stat {
+    border-top: 1px solid var(--dark-line);
+
+    padding-top: 20px;
+}
+
+
+.stat strong {
+    display: block;
+
+    font-family: 'Playfair Display', serif;
+
+    font-size: 60px;
+}
+
+
+.stat span {
+    color: #9f9086;
+
+    font-size: 14px;
+}
+
+
+/* =========================================================
+   HOMEPAGE EVENTS
+========================================================= */
+
+.events {
+    background: var(--cream);
+}
+
+
+.event-grid {
+    display: grid;
+
+    grid-template-columns: repeat(3, 1fr);
+
+    grid-auto-rows: 330px;
+
+    gap: 20px;
+
+    align-items: stretch;
+}
+
+
+.event-card {
+    height: 100%;
+
+    padding: 30px;
+
+    display: flex;
+
+    flex-direction: column;
+
+    border: 1px solid var(--line);
+
+    background: var(--cream-card);
+
+    transition:
+        transform 0.3s ease,
+        background 0.3s ease;
+}
+
+
+.event-card:hover {
+    transform: translateY(-8px);
+
+    background: #e9dece;
+}
+
+
+.event-number {
+    font-size: 12px;
+
+    color: var(--orange);
+}
+
+
+.event-card h3 {
+    font-family: 'Playfair Display', serif;
+
+    font-size: 35px;
+
+    line-height: 1;
+
+    margin-top: 50px;
+}
+
+
+.event-card p {
+    margin-top: 15px;
+
+    color: var(--muted);
+
+    line-height: 1.5;
+}
+
+
+.event-card a {
+    margin-top: auto;
+
+    font-size: 13px;
+    font-weight: 700;
+
+    color: var(--red);
+}
+
+
+.event-card a:hover {
+    color: var(--orange);
+}
+
+
+/* =========================================================
+   HOMEPAGE REGISTER
+========================================================= */
+
+.register {
+    padding: 150px 8%;
+
+    background: var(--gold);
+}
+
+
+.register-content {
+    max-width: 900px;
+}
+
+
+.register h2 {
+    font-family: 'Playfair Display', serif;
+
+    font-size: clamp(55px, 7vw, 100px);
+
+    line-height: 0.9;
+    letter-spacing: 0px;
+}
+
+
+.register p:not(.eyebrow) {
+    max-width: 600px;
+
+    margin: 30px 0;
+
+    font-size: 18px;
+
+    line-height: 1.5;
+}
+
+
+.register small {
+    display: block;
+
+    margin-top: 20px;
+
+    color: #6f4e14;
+}
+
+
+/* =========================================================
+   FOOTER
+========================================================= */
+
+footer {
+    padding: 60px 8%;
+
+    display: flex;
+
+    justify-content: space-between;
+
+    gap: 40px;
+
+    background: var(--dark);
+
+    color: white;
+}
+
+
+.footer-logo {
+    font-size: 20px;
+
+    font-weight: 700;
+
+    line-height: 0.9;
+
+    color: var(--coral);
+}
+
+
+.footer-info p {
+    color: #9f9086;
+
+    margin-bottom: 5px;
+}
+
+
+.footer-links {
+    display: flex;
+
+    gap: 25px;
+}
+
+
+.footer-links a {
+    color: #b9aaa0;
+
+    font-size: 14px;
+
+    transition: color 0.2s ease;
+}
+
+
+.footer-links a:hover {
+    color: white;
+}
+
+
+/* =========================================================
+   EVENT PAGES
+========================================================= */
+
+.event-page {
+    padding-top: 80px;
+}
+
+
+/* =========================================================
+   EVENT HERO
+========================================================= */
+
+.event-hero {
+    min-height: 70vh;
+
+    padding: 75px 8%;
+
+    display: grid;
+
+    grid-template-columns: 1fr 1fr;
+
+    gap: 60px;
+
+    align-items: center;
+}
+
+
+.event-hero h1 {
+    color: var(--red);
+
+    font-family: 'Playfair Display', serif;
+
+    font-size: clamp(70px, 9vw, 140px);
+
+    line-height: 0.9;
+    letter-spacing: -6px;
+}
+
+
+.event-intro {
+    max-width: 650px;
+
+    margin-top: 25px;
+
+    font-size: 19px;
+
+    line-height: 1.55;
+
+    color: var(--muted);
+}
+
+
+.event-image {
+    height: 500px;
+
+    overflow: hidden;
+
+    background: #e3d9cc;
+}
+
+
+.event-image img {
+    width: 100%;
+    height: 100%;
+
+    object-fit: cover;
+
+    display: block;
+}
+
+
+/* =========================================================
+   EVENT PANEL COLOURS
+========================================================= */
+
+/*
+   DEFAULT DESIGN:
+
+   Dark panel
+       ↓
+   Cream panel
+       ↓
+   Dark panel
+       ↓
+   Cream panel
+
+   The darker cream panel is ONLY used when
+   two light sections would otherwise sit next
+   to each other.
+*/
+
+
+.panel-dark {
+    background: var(--dark) !important;
+
+    color: white;
+
+    border-top: 2px solid var(--dark-line);
+}
+
+
+.panel-light {
+    background: var(--cream) !important;
+
+    color: var(--ink);
+
+    border-top: 2px solid var(--line);
+}
+
+
+/*
+   Last-resort separator colour.
+
+   Use ONLY when two cream sections need
+   visual separation.
+*/
+
+.panel-cream {
+    background: var(--cream-card) !important;
+
+    color: var(--ink);
+
+    border-top: 2px solid var(--line);
+}
+
+
+.panel-gold {
+    background: var(--gold) !important;
+
+    border-top: 2px solid #D39C0B;
+}
+
+
+/* =========================================================
+   EVENT INFORMATION
+========================================================= */
+
+.event-information {
+    padding: 90px 8%;
+
+    display: grid;
+
+    grid-template-columns: 1fr 1fr;
+
+    gap: 80px;
+
+    border-top: 2px solid var(--dark-line);
+
+    background: var(--dark);
+
+    color: white;
+}
+
+
+.event-description {
+    max-width: none;
+}
+
+
+.event-description h2 {
+    font-family: 'Playfair Display', serif;
+
+    font-size: clamp(55px, 6vw, 90px);
+
+    line-height: 0.95;
+
+    letter-spacing: 0px;
+
+    margin-bottom: 35px;
+}
+
+
+.event-description p:not(.eyebrow) {
+    font-size: 18px;
+
+    line-height: 1.6;
+
+    margin-bottom: 20px;
+
+    max-width: 700px;
+}
+
+
+/* Dark information panels */
+
+.event-information.panel-dark {
+    background: var(--dark) !important;
+
+    color: white;
+}
+
+
+.event-information.panel-dark .event-description p:not(.eyebrow) {
+    color: #b9aaa0;
+}
+
+
+/* Light information panels */
+
+.event-information.panel-light {
+    background: var(--cream) !important;
+
+    color: var(--ink);
+}
+
+
+.event-information.panel-light .event-description p:not(.eyebrow) {
+    color: var(--muted);
+}
+
+
+/* Darker cream only when explicitly required */
+
+.event-information.panel-cream {
+    background: var(--cream-card) !important;
+
+    color: var(--ink);
+}
+
+
+.event-information.panel-cream .event-description p:not(.eyebrow) {
+    color: var(--muted);
+}
+
+
+/* Details */
+
+.event-details {
+    display: grid;
+
+    grid-template-columns: 1fr 1fr;
+
+    align-content: start;
+
+    align-self: center;
+}
+
+
+.detail {
+    padding: 18px 0;
+
+    border-top: 1px solid var(--dark-line);
+}
+
+
+.detail span {
+    display: block;
+
+    font-size: 13px;
+
+    margin-bottom: 8px;
+}
+
+
+.detail strong {
+    font-size: 18px;
+
+    color: var(--coral);
+}
+
+
+/* Light-panel details */
+
+.event-information.panel-light .detail,
+.event-information.panel-cream .detail {
+    border-top-color: var(--line);
+}
+
+
+.event-information.panel-light .detail span,
+.event-information.panel-cream .detail span {
+    color: var(--muted);
+}
+
+
+/* =========================================================
+   EVENT RULE PANELS
+========================================================= */
+
+.event-rules {
+    padding: 90px 8%;
+
+    border-top: 2px solid var(--line);
+
+    background: var(--cream);
+
+    color: var(--ink);
+}
+
+
+.event-rules.panel-light {
+    background: var(--cream) !important;
+}
+
+
+.event-rules.panel-cream {
+    background: var(--cream-card) !important;
+}
+
+
+.event-rules.panel-dark {
+    background: var(--dark) !important;
+
+    color: white;
+
+    border-top-color: var(--dark-line);
+}
+
+
+.event-rules h2 {
+    color: var(--red);
+
+    font-family: 'Playfair Display', serif;
+
+    font-size: clamp(55px, 6vw, 90px);
+
+    line-height: 0.95;
+
+    letter-spacing: 0px;
+
+    margin-bottom: 45px;
+}
+
+
+/*
+   Rule rows remain completely OPEN.
+*/
+
+.rules-list {
+    width: 100%;
+
+    max-width: 1250px;
+
+    display: grid;
+
+    grid-template-columns: 1fr 1fr;
+
+    column-gap: 70px;
+
+    row-gap: 0;
+}
+
+
+.rules-list > div {
+    display: grid;
+
+    grid-template-columns: 45px 1fr;
+
+    gap: 20px;
+
+    padding: 22px 0;
+
+    align-items: start;
+
+    background: transparent;
+
+    border: none;
+
+    border-top: 1px solid #c9beb1;
+}
+
+
+.rules-list span {
+    color: var(--orange);
+
+    font-size: 13px;
+}
+
+
+.rules-list p {
+    font-size: 17px;
+
+    line-height: 1.5;
+}
+
+
+.rules-list h3 {
+    font-family: 'Playfair Display', serif;
+
+    font-size: 26px;
+
+    line-height: 1.1;
+
+    margin-bottom: 8px;
+}
+
+
+.rules-list > div > div {
+    max-width: none;
+}
+
+
+/* Dark rule panels */
+
+.event-rules.panel-dark .rules-list > div {
+    border-top-color: var(--dark-line);
+}
+
+
+.event-rules.panel-dark .rules-list p,
+.event-rules.panel-dark .rules-list h3 {
+    color: white;
+}
+
+
+/* =========================================================
+   CRITERIA / JUDGING
+========================================================= */
+
+.event-criteria {
+    padding: 90px 8%;
+
+    border-top: 2px solid var(--line);
+
+    background: var(--cream);
+
+    color: var(--ink);
+}
+
+
+.event-criteria.panel-light {
+    background: var(--cream) !important;
+}
+
+
+.event-criteria.panel-cream {
+    background: var(--cream-card) !important;
+}
+
+
+.event-criteria.panel-dark {
+    background: var(--dark) !important;
+
+    color: white;
+
+    border-top-color: var(--dark-line);
+}
+
+
+.event-criteria h2 {
+    color: var(--red);
+
+    font-family: 'Playfair Display', serif;
+
+    font-size: clamp(55px, 6vw, 90px);
+
+    line-height: 0.95;
+
+    letter-spacing: 0px;
+
+    margin-bottom: 45px;
+}
+
+
+.criteria-grid {
+    display: grid;
+
+    grid-template-columns: repeat(3, 1fr);
+
+    gap: 20px;
+
+    width: 100%;
+
+    max-width: 1250px;
+}
+
+
+/* =========================================================
+   CRITERIA CARDS
+========================================================= */
+
+/*
+   Light parent:
+       darker cream cards
+
+   Darker cream parent:
+       light cream cards
+
+   Dark parent:
+       slightly darker burgundy cards
+*/
+
+
+.panel-light .criteria-card {
+    background: var(--cream-card);
+
+    border: 1px solid var(--line);
+}
+
+
+.panel-cream .criteria-card {
+    background: var(--cream);
+
+    border: 1px solid var(--line);
+}
+
+
+.panel-dark .criteria-card {
+    background: var(--dark-deep);
+
+    border: 1px solid var(--dark-line);
+
+    color: white;
+}
+
+
+.criteria-card {
+    min-height: 180px;
+
+    padding: 28px;
+}
+
+
+.criteria-card span {
+    color: var(--orange);
+
+    font-size: 13px;
+}
+
+
+.criteria-card h3 {
+    font-family: 'Playfair Display', serif;
+
+    font-size: 28px;
+
+    line-height: 1.1;
+
+    margin-top: 25px;
+}
+
+
+.criteria-card p {
+    margin-top: 10px;
+
+    color: var(--muted);
+
+    line-height: 1.5;
+}
+
+
+.panel-dark .criteria-card p {
+    color: #b9aaa0;
+}
+
+
+/* =========================================================
+   EVENT REGISTER
+========================================================= */
+
+.event-register {
+    padding: 110px 8%;
+
+    display: grid;
+
+    grid-template-columns: 1fr 1fr;
+
+    gap: 80px;
+
+    align-items: center;
+
+    background: var(--gold);
+
+    border-top: 2px solid #D39C0B;
+}
+
+
+.event-register.panel-gold {
+    background: var(--gold) !important;
+}
+
+
+.event-register > div:first-child {
+    min-width: 0;
+}
+
+
+.event-register > div:last-child {
+    max-width: 600px;
+
+    justify-self: stretch;
+
+    display: flex;
+
+    flex-direction: column;
+
+    align-items: flex-start;
+
+    justify-content: center;
+}
+
+
+.event-register .eyebrow {
+    margin-bottom: 30px;
+
+    color: var(--dark);
+}
+
+
+.event-register h2 {
+    color: white;
+
+    font-family: 'Playfair Display', serif;
+
+    font-size: clamp(55px, 7vw, 100px);
+
+    line-height: 0.95;
+
+    letter-spacing: 0px;
+}
+
+
+.event-register p:not(.eyebrow) {
+    max-width: 600px;
+
+    margin: 0 0 30px 0;
+
+    font-size: 19px;
+
+    line-height: 1.6;
+
+    color: #6f4e14;
+}
+
+
+.event-register .button {
+    margin: 0;
+}
+
+
+.event-register small {
+    display: block;
+
+    margin-top: 22px;
+
+    font-size: 13px;
+
+    color: #6f4e14;
+}
+
+
+/* =========================================================
+   REGISTRATION PAGE
+========================================================= */
+
+.registration-page {
+    padding-top: 150px;
+}
+
+
+.registration-grid {
+    display: grid;
+
+    grid-template-columns: repeat(3, 1fr);
+
+    gap: 20px;
+
+    margin-top: 20px;
+}
+
+
+.registration-card {
+    min-height: 300px;
+
+    padding: 30px;
+
+    display: flex;
+
+    flex-direction: column;
+
+    border: 1px solid var(--line);
+
+    background: var(--cream-card);
+
+    transition:
+        transform 0.25s ease,
+        background 0.25s ease;
+}
+
+
+.registration-card:hover {
+    transform: translateY(-6px);
+
+    background: var(--cream-dark);
+}
+
+
+.registration-card .event-number {
+    color: var(--orange);
+}
+
+
+.registration-card .eyebrow {
+    margin-top: 32px;
+
+    margin-bottom: 12px;
+
+    font-size: 10px;
+}
+
+
+.registration-card h2 {
+    color: var(--red);
+
+    font-family: 'Playfair Display', serif;
+
+    font-size: 34px;
+
+    line-height: 1;
+
+    letter-spacing: -1px;
+}
+
+
+.registration-card-actions {
+    margin-top: auto;
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 12px;
+
+    flex-wrap: wrap;
+}
+
+
+.registration-link {
+    margin-top: 0;
+
+    font-size: 14px;
+
+    font-weight: 700;
+
+    color: var(--red);
+}
+
+
+.registration-link:hover {
+    color: var(--orange);
+}
+
+
+.registration-button {
+    padding: 11px 16px;
+
+    font-size: 12px;
+}
+
+
+.registration-status {
+    color: var(--muted);
+
+    font-size: 11px;
+
+    font-weight: 600;
+}
+
+
+/* =========================================================
+   ACCENTS
+========================================================= */
+
+.nav-divider {
+    background: var(--red);
+}
+
+
+.nav-event-count {
+    border-right-color: var(--line);
+}
+
+
+.count-number {
+    color: var(--red);
+}
+
+
+.event-number {
+    color: var(--orange);
+}
+
+
+.event-card a {
+    color: var(--red);
+}
+
+
+.event-card a:hover {
+    color: var(--orange);
+}
+
+
+.detail strong {
+    color: var(--coral);
+}
+
+
+.rules-list span,
+.criteria-card span {
+    color: var(--orange);
+}
+
+
+footer .footer-logo {
+    color: var(--coral);
+}
+
+
+/* =========================================================
+   TABLET
+========================================================= */
+
+@media (max-width: 1100px) {
+
+    .nav-info {
+        display: none;
+    }
+
+
+    nav {
+        margin-left: auto;
+    }
+
+
+    .rules-list {
+        max-width: 100%;
+    }
+
+
+    .criteria-grid {
+        max-width: 100%;
+    }
+
+}
+
+
+@media (max-width: 900px) {
+
+    .navbar {
+        padding: 0 5%;
+    }
+
+
+    nav {
+        display: none;
+    }
+
+
+    .nav-event-count {
+        margin-left: auto;
+    }
+
+
+    .hero {
+        grid-template-columns: 1fr;
+
+        padding: 120px 5% 70px;
+    }
+
+
+    .hero-image {
+        order: 2;
+    }
+
+
+    .hero-content {
+        order: 1;
+    }
+
+
+    .hero h1 {
+        letter-spacing: -4px;
+    }
+
+
+    .about-content {
+        grid-template-columns: 1fr;
+
+        gap: 60px;
+    }
+
+
+    .event-grid {
+        grid-template-columns: repeat(2, 1fr);
+
+        grid-auto-rows: 320px;
+    }
+
+
+    .event-hero {
+        grid-template-columns: 1fr;
+
+        padding: 65px 5%;
+    }
+
+
+    .event-image {
+        height: 430px;
+    }
+
+
+    .event-information {
+        grid-template-columns: 1fr;
+
+        gap: 50px;
+
+        padding: 75px 5%;
+    }
+
+
+    .event-rules {
+        padding: 75px 5%;
+    }
+
+
+    .rules-list {
+        grid-template-columns: 1fr;
+
+        column-gap: 0;
+    }
+
+
+    .event-criteria {
+        padding: 75px 5%;
+    }
+
+
+    .criteria-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+
+    .event-register {
+        grid-template-columns: 1fr;
+
+        gap: 40px;
+
+        padding: 90px 5%;
+    }
+
+
+    .event-register > div:last-child {
+        max-width: 650px;
+
+        justify-self: start;
+    }
+
+
+    .registration-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+}
+
+
+@media (max-width: 600px) {
+
+    .navbar {
+        height: 70px;
+
+        padding: 0 5%;
+    }
+
+
+    .nav-event-count {
+        display: none;
+    }
+
+
+    .nav-button {
+        display: none;
+    }
+
+
+    .hero {
+        padding: 110px 5% 60px;
+    }
+
+
+    .hero-image {
+        height: auto;
+    }
+
+
+    .hero h1 {
+        font-size: 70px;
+
+        letter-spacing: -4px;
+    }
+
+
+    .hero-description {
+        font-size: 17px;
+    }
+
+
+    .hero-buttons {
+        flex-direction: column;
+
+        align-items: flex-start;
+    }
+
+
+    .section {
+        padding: 90px 5%;
+    }
+
+
+    .section-heading {
+        margin-bottom: 50px;
+    }
+
+
+    .section-heading h2 {
+        font-size: 55px;
+
+        letter-spacing: -2px;
+    }
+
+
+    .about-text .section-heading {
+        margin-bottom: 40px;
+    }
+
+
+    .event-grid {
+        grid-template-columns: 1fr;
+
+        grid-auto-rows: auto;
+    }
+
+
+    .event-card {
+        min-height: 300px;
+
+        height: auto;
+    }
+
+
+    .stats {
+        gap: 30px;
+    }
+
+
+    .stat strong {
+        font-size: 45px;
+    }
+
+
+    .register {
+        padding: 100px 5%;
+    }
+
+
+    .register h2 {
+        font-size: 58px;
+
+        letter-spacing: -3px;
+    }
+
+
+    footer {
+        padding: 50px 5%;
+
+        flex-direction: column;
+    }
+
+
+    .footer-links {
+        flex-direction: column;
+
+        gap: 12px;
+    }
+
+
+    .event-page {
+        padding-top: 70px;
+    }
+
+
+    .event-hero {
+        padding: 60px 5%;
+    }
+
+
+    .event-hero h1 {
+        font-size: 70px;
+
+        letter-spacing: -4px;
+    }
+
+
+    .event-image {
+        height: 330px;
+    }
+
+
+    .event-details {
+        grid-template-columns: 1fr;
+    }
+
+
+    .event-description h2,
+    .event-rules h2,
+    .event-criteria h2,
+    .event-register h2 {
+        font-size: 58px;
+
+        letter-spacing: -3px;
+    }
+
+
+    .rules-list {
+        grid-template-columns: 1fr;
+    }
+
+
+    .rules-list > div {
+        grid-template-columns: 45px 1fr;
+
+        gap: 20px;
+    }
+
+
+    .criteria-grid {
+        grid-template-columns: 1fr;
+    }
+
+
+    .criteria-card {
+        min-height: 180px;
+    }
+
+
+    .event-register {
+        grid-template-columns: 1fr;
+
+        gap: 30px;
+
+        padding: 90px 5%;
+    }
+
+
+    .event-register > div:last-child {
+        max-width: 600px;
+
+        justify-self: start;
+    }
+
+
+    .event-register p:not(.eyebrow) {
+        margin-bottom: 28px;
+
+        font-size: 17px;
+    }
+
+
+    .event-register small {
+        margin-top: 20px;
+    }
+
+
+    .registration-grid {
+        grid-template-columns: 1fr;
+    }
+
+}
