@@ -22,6 +22,8 @@
     --dark: #3A181C;
     --dark-deep: #32161A;
     --dark-line: #604044;
+
+    --white: #FFFFFF;
 }
 
 
@@ -844,7 +846,7 @@ footer {
 
 
 .event-information.panel-dark .event-description p:not(.eyebrow) {
-    color: #b9aaa0;
+    color: white;
 }
 
 
