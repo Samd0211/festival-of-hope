@@ -921,6 +921,84 @@ footer {
     padding-top: 150px;
 }
 
+
+/* =========================================================
+   PSG REGISTRATION
+========================================================= */
+
+.psg-registration-card {
+    width: 100%;
+    min-height: 240px;
+    margin-bottom: 65px;
+    padding: 35px 40px;
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+    gap: 40px;
+    border: 1px solid var(--line);
+    background: var(--cream-dark);
+}
+
+.psg-registration-content {
+    min-width: 0;
+}
+
+.psg-registration-card .event-number {
+    display: block;
+    margin-bottom: 18px;
+}
+
+.psg-registration-card .eyebrow {
+    margin-bottom: 12px;
+}
+
+.psg-registration-card h2 {
+    color: var(--red);
+    font-family: 'Playfair Display', serif;
+    font-size: 46px;
+    line-height: 1;
+    letter-spacing: -1px;
+}
+
+.psg-registration-description {
+    max-width: 800px;
+    margin-top: 15px;
+    color: var(--muted);
+    font-size: 17px;
+    line-height: 1.5;
+}
+
+.psg-registration-card .registration-card-actions {
+    flex-shrink: 0;
+    margin-top: 0;
+}
+
+
+/* =========================================================
+   REGISTRATION SECTION HEADING
+========================================================= */
+
+.registration-section-heading {
+    max-width: 750px;
+    margin-bottom: 40px;
+}
+
+.registration-section-heading h3 {
+    color: var(--red);
+    font-family: 'Playfair Display', serif;
+    font-size: clamp(45px, 5vw, 70px);
+    line-height: 0.95;
+    letter-spacing: 0;
+}
+
+.registration-section-heading p:last-child {
+    margin-top: 18px;
+    color: var(--muted);
+    font-size: 17px;
+    line-height: 1.5;
+}
+
+
 .registration-grid {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -1144,6 +1222,15 @@ footer .footer-logo {
         justify-self: start;
     }
 
+    .psg-registration-card {
+        align-items: flex-start;
+        flex-direction: column;
+    }
+
+    .psg-registration-card .registration-card-actions {
+        margin-top: 10px;
+    }
+
     .registration-grid {
         grid-template-columns: repeat(2, 1fr);
     }
@@ -1305,6 +1392,20 @@ footer .footer-logo {
 
     .event-register small {
         margin-top: 20px;
+    }
+
+    .psg-registration-card {
+        min-height: 220px;
+        padding: 25px;
+        gap: 25px;
+    }
+
+    .psg-registration-card h2 {
+        font-size: 36px;
+    }
+
+    .registration-section-heading h3 {
+        font-size: 50px;
     }
 
     .registration-grid {
